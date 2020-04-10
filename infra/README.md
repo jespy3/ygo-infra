@@ -15,3 +15,6 @@ This file contains the Terraform for the underlying infrastructure.
 - [`iam.tf`](./iam.tf) - Contains the AWS IAM Roles and Policies.
 - [`codebuild.tf`](./codebuild.tf) - Contains the resources for AWS CodeBuild.
 - [`s3.tf`](./s3.tf) - Contains the resources for AWS S3.
+
+## Providers.tf
+This is where we declare what will be used to create infrastructure - Terraform sets up a controller that _provides_ us access to using a provider's resources via their API (Application Programming Interface - they way we can interact with an application).
