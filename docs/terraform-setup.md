@@ -16,3 +16,6 @@ Started this project out by having the minimum:
 - `providers.tf` - To declare what Terraform providers are needed. Helps with `terraform init`.
 - `variables.tf` - To house our variable inputs for use throughout the project.
 - `main.tf` - To have our first defined resources. Eventually, resources will be categorised in separate files/modules by resource type.
+
+## What's Next?
+- [Understanding the Providers terraform](/docs/providers.md)
