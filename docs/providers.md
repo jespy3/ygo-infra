@@ -13,7 +13,13 @@ Our basic provider looks like this:
 provider "aws" {
   version = "~> 2.0"
   region  = "ap-southeast-2"
+  profile = "personal"
 }
 ```
+
+**arguments:**
+- `version` = This uses version 2.0 of the terraform AWS provider. It is the latest working version.
+- `region` = Specifies that the resources created are in Sydney (`ap-southeast-2`)
+- `profile` = Uses the `personal` profile in the credentials file. By default, the provider looks for our access key and secret in the default `shared_credentials_file_path`, which is `$HOME/.aws/credentials`. You need the correct credentials for my user on my AWS account to access this.
 
 Check out the rest of our provider code [here in the `providers.tf`](/infra/providers.tf).
