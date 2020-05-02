@@ -6,3 +6,14 @@ The way that your Terraform code will be able to interact with the API of anothe
 
 ## The AWS provider
 
+Setting up a provider specific to AWS will allow us to create AWS resources with our Terraform code. This requires to be set up with our AWS passwords to be able to be used, but in a secure way as to not commit sensitive information in to Github.
+
+Our basic provider looks like this:
+```
+provider "aws" {
+  version = "~> 2.0"
+  region  = "ap-southeast-2"
+}
+```
+
+Check out the rest of our provider code [here in the `providers.tf`](/infra/providers.tf).
