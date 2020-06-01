@@ -5,3 +5,4 @@ Here is the documentation of this repository
 
 - [The Terraform Setup](/docs/terraform-setup.md) - Set up your Terraform workstation to work on this project.
 - [Providers](/docs/providers.md) - Explaining the providers terraform.
+- [Terraform concepts](/docs/concepts.md) - Explaining what a terraform backend is.
