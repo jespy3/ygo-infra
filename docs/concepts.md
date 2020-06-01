@@ -13,4 +13,9 @@ Prior to any terraform command being run, TF does a _refresh_ to update the stat
 
 ## Backend
 
-A terraform backend defines how state is loaded.
+A terraform backend defines how state is loaded and how terraform commands are run - allowing things like non-local file storage and execution.
+
+By default, TF uses the "local" backend. Using a remote backend helps for:
+- Working in a team.
+- Keeping sensitive info off your local machine.
+- Running terraform remotely.
